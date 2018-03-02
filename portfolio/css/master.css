@@ -1,0 +1,82 @@
+#main-photo {
+  width: 100%;
+  height: 75%;
+  padding-bottom: 20px;
+}
+body {
+  background-color: black;
+}
+hr {
+  background-color: white;
+}
+
+header {
+  text-align: right;
+}
+h3 {
+  text-align: center;
+  padding-top: 15px;
+}
+#logo{
+  float: left;
+  width: 110px;
+  padding-left: 20px;
+}
+footer {
+  text-align: center;
+}
+.container {
+  font-family: 'Acme', sans-serif;
+  color: white;
+}
+
+
+/*************************************
+  Start:   Featured photos sytle
+*************************************/
+.photo img{
+  width: 100%;
+  height: 60%;
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.photo:hover img{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.photo .glow-wrap{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  margin-top: -10px;
+}
+
+.photo .glow{
+  display: block;
+  position:absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap{
+  margin-top: 0;
+}
+/*************************************
+  End:   Featured photos sytle
+*************************************/
