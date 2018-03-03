@@ -1,11 +1,12 @@
-#main-photo {
+.main-photo {
   width: 100%;
-  height: 75%;
   padding-bottom: 20px;
 }
+
 body {
   background-color: black;
 }
+
 hr {
   background-color: white;
 }
@@ -13,20 +14,24 @@ hr {
 header {
   text-align: right;
 }
+
 h3 {
   text-align: center;
   padding-top: 15px;
 }
-#logo{
+
+.logo{
   float: left;
   width: 110px;
   padding-left: 20px;
 }
+
 footer {
   text-align: center;
 }
+
 .container {
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   color: white;
 }
 
@@ -34,7 +39,7 @@ footer {
 /*************************************
   Start:   Featured photos sytle
 *************************************/
-.photo img{
+.featured-photo{
   width: 100%;
   height: 60%;
   box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
@@ -43,7 +48,7 @@ footer {
   margin-top: -10px;
 }
 
-.photo:hover img{
+.featured-photo:hover {
   box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
 }
 
