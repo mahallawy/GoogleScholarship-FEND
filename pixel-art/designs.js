@@ -33,7 +33,6 @@ table.addEventListener("click", function(e) {
   }
 });
 
-
 //Double Click to remove the color
 table.addEventListener("dblclick", function(e) {
   if (e.target && e.target.nodeName == "TD") {
