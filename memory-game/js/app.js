@@ -1,14 +1,45 @@
-/*
- * Create a list that holds all of your cards
- */
+// identify cards array
+let card = document.getElementsByClassName("card");
+let cards = [...card];
+
+// identify deck for all cards
+const deck = document.getElementsByClassName("deck");
+
+// identify move variable
+let moves = 0;
+let counter = document.querySelector(".moves");
+
+// identify variables for star icons
+const stars = document.querySelectorAll(".fa-star");
+// identify stars list
+let starsList = document.querySelectorAll(".stars li");
+
+// identify variable of matchedCards
+let matchedCard = document.getElementsByClassName("match");
+
+// identify close icon in modal
+ let closeicon = document.querySelector(".close");
+
+// identify array for opened cards
+var openedCards = [];
 
 
-/*
- * Display the cards on the page
- *   - shuffle the list of cards using the provided "shuffle" method below
- *   - loop through each card and create its HTML
- *   - add each card's HTML to the page
- */
+// toggles open and show class to display cards
+var displayCard = function (){
+    this.classList.toggle("open");
+    this.classList.toggle("show");
+    this.classList.toggle("disabled");
+};
+
+// loop to add event listeners to each card
+for (var i = 0; i < cards.length; i++){
+    card = cards[i];
+    card.addEventListener("click", displayCard);
+    //card.addEventListener("click", cardOpen);
+    //card.addEventListener("click",congratulations);
+};
+
+
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
