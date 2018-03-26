@@ -4,9 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>Matching Game</title>
-  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Mina" >
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -14,27 +18,37 @@
 
   <div class="container">
     <header>
-      <h1>Matching Game</h1>
+      <h1>Lion King Matching Game</h1>
     </header>
 
-    <section class="score-panel">
-      <ul class="stars">
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-star"></i></li>
-      </ul>
+    <section class="score-panel row">
 
-      <span class="moves">3</span> Moves
+        <div class="col-sm-2">
+          <ul class="stars">
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <p><span class="moves">0</span> Moves</p>
+        </div>
 
-      <div class="restart">
-        <i class="fa fa-repeat"></i>
-      </div>
+        <div class="col-sm-4">
+          <div class="timer">
+          </div>
+        </div>
 
-      <div class="timer">
-      </div>
+        <div class="col-sm-2">
+          <div class="restart" onclick="startGame()">
+          <i class="fa fa-repeat"></i>
+          </div>
+        </div>
+
     </section>
 
-    <ul class="deck">
+
+    <ul id="deck">
       <li class="card" type="ship">
         <i class="fa fa-ship"></i>
       </li>
